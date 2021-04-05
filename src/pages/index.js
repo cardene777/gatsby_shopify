@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { Link } from 'gatsby'
 
 import SEO from '~/components/seo'
 import ProductGrid from '~/components/ProductGrid'
@@ -10,7 +10,8 @@ const IndexPage = () => (
     <h1>Hi people</h1>
     <p>Welcome to your new Shop powered by Gatsby and Shopify.</p>
     <ProductGrid />
-    <Link to="/page-2/">Go to page 2</Link>
+    <p><Link to="/page-2/">Go to page 2</Link></p>
+    <p><Link to="/blog/">Go to blog</Link></p>
   </>
 )
 
